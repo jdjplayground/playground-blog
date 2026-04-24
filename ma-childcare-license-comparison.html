@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Massachusetts Child Care License Types: Requirements Comparison</title>
+<meta name="description" content="Compare application requirements, physical location rules, background checks, and fees for all four Massachusetts child care license types: large group, small group, family child care, and family child care assistant.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=DM+Sans:wght@400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue-primary: #1F5CF7;
+    --blue-secondary: #052641;
+    --cloud: #E6ECF3;
+    --cream: #FEF5E4;
+    --peach: #FFE5BC;
+    --yellow: #FFA211;
+    --yellow-dark: #7a4d00;
+    --blue-light: #dce8ff;
+    --cloud-dark: #2a3f5a;
+    --peach-dark: #6b3d00;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--blue-secondary);
+    padding: 2.5rem 1.5rem;
+    line-height: 1.6;
+  }
+
+  .page-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  header {
+    margin-bottom: 2.5rem;
+  }
+
+  header h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    font-weight: 600;
+    color: var(--blue-secondary);
+    line-height: 1.25;
+    margin-bottom: 0.6rem;
+  }
+
+  header p {
+    font-size: 0.95rem;
+    color: #4a5568;
+    max-width: 640px;
+  }
+
+  .legend {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--blue-secondary);
+    opacity: 0.75;
+  }
+
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid var(--cloud);
+    background: #fff;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    min-width: 860px;
+    table-layout: fixed;
+  }
+
+  thead tr:first-child th {
+    background: var(--blue-secondary);
+    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 1rem 1.1rem;
+    text-align: left;
+    letter-spacing: 0.01em;
+  }
+
+  thead tr:first-child th:first-child {
+    border-radius: 11px 0 0 0;
+    width: 155px;
+    min-width: 155px;
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    background: var(--blue-secondary);
+  }
+
+  thead tr.col-headers th:first-child {
+    color: transparent;
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    background: #f8fafc;
+  }
+
+  .section-header td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background: var(--cloud);
+  }
+
+  tbody tr:not(.section-header) td:first-child {
+    font-weight: 500;
+    color: #4a5568;
+    font-size: 0.8rem;
+    width: 155px;
+    min-width: 155px;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background: #fff;
+  }
+
+  thead tr:first-child th:last-child {
+    border-radius: 0 11px 0 0;
+  }
+
+  thead tr.col-headers th {
+    padding: 0.6rem 1.1rem;
+    font-size: 0.72rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #6b7a8d;
+    border-bottom: 1.5px solid var(--cloud);
+    background: #f8fafc;
+    vertical-align: bottom;
+  }
+
+  thead tr.col-headers th:first-child {
+    color: transparent;
+  }
+
+  .section-header td {
+    background: var(--cloud);
+    font-weight: 500;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--cloud-dark);
+    padding: 0.5rem 1.1rem;
+    border-top: 1px solid #ccd6e0;
+  }
+
+  tbody tr:not(.section-header) td {
+    padding: 0.75rem 1.1rem;
+    border-bottom: 0.5px solid #e8edf2;
+    vertical-align: top;
+    color: var(--blue-secondary);
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  tbody tr:not(.section-header):last-child td {
+    border-bottom: none;
+  }
+
+
+
+  .col-large { background: #eef3ff; }
+  .col-small { background: var(--cloud); }
+  .col-fcc { background: #fff0d6; }
+  .col-asst { background: #fff8e6; }
+
+  thead tr:first-child th.col-large { background: var(--blue-primary); color: #fff; }
+  thead tr:first-child th.col-small { background: var(--cloud-dark); color: #fff; }
+  thead tr:first-child th.col-fcc { background: var(--yellow-dark); color: #fff; }
+  thead tr:first-child th.col-asst { background: var(--yellow); color: var(--blue-secondary); }
+
+  .badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-bottom: 4px;
+    margin-right: 3px;
+    line-height: 1.6;
+  }
+
+  .badge-large { background: #dce8ff; color: var(--blue-primary); }
+  .badge-small { background: var(--cloud); color: var(--cloud-dark); }
+  .badge-fcc { background: var(--peach); color: var(--peach-dark); }
+  .badge-asst { background: #fff3cc; color: var(--yellow-dark); }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    padding-left: 1rem;
+    position: relative;
+    margin-bottom: 3px;
+    font-size: 0.84rem;
+    line-height: 1.5;
+  }
+
+  ul li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: #a0aec0;
+  }
+
+  .fee {
+    font-family: 'Lora', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  .fee-large { color: var(--blue-primary); }
+  .fee-small { color: var(--cloud-dark); }
+  .fee-fcc { color: var(--peach-dark); }
+  .fee-asst { color: var(--yellow-dark); }
+
+  .fee-sub {
+    display: block;
+    font-size: 0.72rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color: #6b7a8d;
+    margin-top: 2px;
+  }
+
+  .check {
+    color: var(--blue-primary);
+    font-size: 0.9rem;
+  }
+
+  .same-tag {
+    font-size: 0.72rem;
+    color: #a0aec0;
+    font-style: italic;
+  }
+
+  footer {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    color: #6b7a8d;
+    border-top: 1px solid var(--cloud);
+    padding-top: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 1.5rem 1rem; }
+    header h1 { font-size: 1.3rem; }
+  }
+</style>
+</head>
+<body>
+<div class="page-wrapper">
+
+  <header>
+    <h1>Massachusetts Child Care License Types and Requirements</h1>
+    <p>A side-by-side comparison of application requirements, facility rules, background checks, and fees for all four EEC license types under 606 CMR 7.00.</p>
+  </header>
+
+  <div class="legend" aria-hidden="true">
+    <div class="legend-item"><div class="legend-dot" style="background:#1F5CF7;"></div> Large group & school age</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#2a3f5a;"></div> Small group & school age</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#7a4d00;"></div> Family child care</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#FFA211;"></div> FCC assistant</div>
+  </div>
+
+  <div class="table-scroll">
+    <table>
+      <colgroup>
+        <col style="width: 155px;">
+        <col style="width: 20%;">
+        <col style="width: 20%;">
+        <col style="width: 20%;">
+        <col style="width: 20%;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col" class="col-large">Large group &amp; school age</th>
+          <th scope="col" class="col-small">Small group &amp; school age</th>
+          <th scope="col" class="col-fcc">Family child care</th>
+          <th scope="col" class="col-asst">FCC assistant</th>
+        </tr>
+        <tr class="col-headers">
+          <th scope="col">Characteristic</th>
+          <th scope="col">Details</th>
+          <th scope="col">Details</th>
+          <th scope="col">Details</th>
+          <th scope="col">Details</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="section-header"><td colspan="5">Defining characteristics</td></tr>
+
+        <tr>
+          <td>Children served</td>
+          <td class="col-large">More than 10 enrollees, age 14 or younger (16 or younger for special needs)</td>
+          <td class="col-small">10 or fewer enrollees, age 14 or younger (16 or younger for special needs)</td>
+          <td class="col-fcc">Up to 10 enrollees, age 14 or younger (16 or younger for special needs)</td>
+          <td class="col-asst">Up to 10 enrollees, age 14 or younger (16 or younger for special needs)</td>
+        </tr>
+        <tr>
+          <td>Location</td>
+          <td class="col-large">Non-residential facility</td>
+          <td class="col-small">Non-residential facility</td>
+          <td class="col-fcc">Private dwelling occupied full-time by licensee or known associate; or duplex/triplex where licensee resides</td>
+          <td class="col-asst">Private dwelling (same rules as FCC); assistant may work across multiple FCC locations</td>
+        </tr>
+
+        <tr class="section-header"><td colspan="5">Basic qualifications</td></tr>
+
+        <tr>
+          <td>Experience required</td>
+          <td class="col-large">No minimum experience requirement — qualifications set per educator role under 606 CMR 7.09</td>
+          <td class="col-small">No minimum experience requirement — qualifications set per educator role under 606 CMR 7.09</td>
+          <td class="col-fcc">
+            <ul>
+              <li>1 year experience for up to 6 children</li>
+              <li>2 years for up to 8 children (incl. 2 school-aged)</li>
+              <li>3 years for up to 10 children</li>
+            </ul>
+          </td>
+          <td class="col-asst">At least 1 year of child care experience</td>
+        </tr>
+
+        <tr>
+          <td>Potential Provider Training</td>
+          <td class="col-large">Required within 12 months prior to application</td>
+          <td class="col-small">Required within 12 months prior to application</td>
+          <td class="col-fcc">Required within 12 months prior to application</td>
+          <td class="col-asst">Required within 12 months prior to application</td>
+        </tr>
+
+        <tr>
+          <td>First Aid &amp; CPR</td>
+          <td class="col-large">At least one staff member certified at all times during care</td>
+          <td class="col-small">At least one staff member certified at all times during care</td>
+          <td class="col-fcc">Current pediatric First Aid &amp; CPR from in-person course required</td>
+          <td class="col-asst">Current pediatric First Aid &amp; CPR from in-person course required</td>
+        </tr>
+
+        <tr>
+          <td>Professional Qualifications Registry</td>
+          <td class="col-large">Current PQR number required for all educators</td>
+          <td class="col-small">Current PQR number required for all educators</td>
+          <td class="col-fcc">Current PQR number required</td>
+          <td class="col-asst">Current PQR number required</td>
+        </tr>
+
+        <tr>
+          <td>EEC Essentials training</td>
+          <td class="col-large">—</td>
+          <td class="col-small">—</td>
+          <td class="col-fcc">Required</td>
+          <td class="col-asst">Required</td>
+        </tr>
+
+        <tr>
+          <td>Health documentation</td>
+          <td class="col-large">Physical exam (within 1 year), immunization record, and statement of limitations — from each staff member's physician</td>
+          <td class="col-small">Physical exam (within 1 year), immunization record, and statement of limitations — from each staff member's physician</td>
+          <td class="col-fcc">Completed EEC medical form signed by applicant's physician</td>
+          <td class="col-asst">Completed EEC medical form signed by physician</td>
+        </tr>
+
+        <tr>
+          <td>Business documentation</td>
+          <td class="col-large">
+            <ul>
+              <li>Legal entity, structure, and officers</li>
+              <li>Staffing plans (orientation, supervision, ratios)</li>
+              <li>Enrollment procedure &amp; non-discrimination statement</li>
+              <li>Curriculum plan</li>
+              <li>Diapering procedure</li>
+              <li>Plan for avoiding child suspension/termination</li>
+              <li>Background record check policies</li>
+              <li>Financial documentation (projected budget)</li>
+              <li>Copy of health care policy</li>
+              <li>Plan for child transitions between classrooms</li>
+            </ul>
+          </td>
+          <td class="col-small">
+            <ul>
+              <li>Legal entity, structure, and officers</li>
+              <li>Staffing plans (orientation, supervision, ratios)</li>
+              <li>Enrollment procedure &amp; non-discrimination statement</li>
+              <li>Curriculum plan</li>
+              <li>Diapering procedure</li>
+              <li>Plan for avoiding child suspension/termination</li>
+            </ul>
+          </td>
+          <td class="col-fcc">Copies of lead paint disclosure statement</td>
+          <td class="col-asst">—</td>
+        </tr>
+
+        <tr class="section-header"><td colspan="5">Application process</td></tr>
+
+        <tr>
+          <td>How to apply</td>
+          <td class="col-large">Contact regional EEC office to request a LEAD account, then apply through the portal</td>
+          <td class="col-small">Contact regional EEC office to request a LEAD account, then apply through the portal</td>
+          <td class="col-fcc">Apply for a LEAD account online directly</td>
+          <td class="col-asst">Apply for a LEAD account online directly</td>
+        </tr>
+
+        <tr class="section-header"><td colspan="5">Physical location requirements</td></tr>
+
+        <tr>
+          <td>Building &amp; fire inspections</td>
+          <td class="col-large">
+            <ul>
+              <li>Certificate from Dept. of Public Safety or local building inspector</li>
+              <li>Fire inspection certificate</li>
+              <li>Water source inspection (if private well)</li>
+              <li>Lead paint inspection</li>
+              <li>Integrated Pest Management compliance</li>
+              <li>Pool inspections, if applicable</li>
+            </ul>
+          </td>
+          <td class="col-small">
+            <ul>
+              <li>Certificate from Dept. of Public Safety or local building inspector</li>
+              <li>Fire inspection certificate</li>
+              <li>Water source inspection (if private well)</li>
+              <li>Lead paint inspection</li>
+              <li>Integrated Pest Management compliance</li>
+              <li>Pool inspections, if applicable</li>
+            </ul>
+          </td>
+          <td class="col-fcc">
+            <ul>
+              <li>At least two egresses to the outside</li>
+              <li>Approved smoke detectors on all floor levels</li>
+              <li>Adequate impact-absorbing material around playground equipment</li>
+            </ul>
+          </td>
+          <td class="col-asst">Same as FCC home where care is provided</td>
+        </tr>
+
+        <tr>
+          <td>Indoor space minimums</td>
+          <td class="col-large">35 sq ft of approved activity space per child; designated admin space separate from play areas</td>
+          <td class="col-small">35 sq ft of approved activity space per child; designated admin space separate from play areas</td>
+          <td class="col-fcc">
+            <ul>
+              <li>150 sq ft minimum for 1–2 children</li>
+              <li>225 sq ft minimum for 3–6 children</li>
+              <li>35 sq ft per child for 7–10 children</li>
+            </ul>
+          </td>
+          <td class="col-asst"><span class="same-tag">Same as FCC home where care is provided</span></td>
+        </tr>
+
+        <tr>
+          <td>Outdoor space &amp; bathrooms</td>
+          <td class="col-large">75 sq ft of outdoor play space per child outside at any time; at least 1 toilet and sink per 20 children</td>
+          <td class="col-small">75 sq ft of outdoor play space per child outside at any time; at least 1 toilet and sink per 20 children</td>
+          <td class="col-fcc"><span class="same-tag">No specific outdoor sq ft requirement; general safety standards apply</span></td>
+          <td class="col-asst"><span class="same-tag">Same as FCC home where care is provided</span></td>
+        </tr>
+
+        <tr class="section-header"><td colspan="5">Background checks</td></tr>
+
+        <tr>
+          <td>Who must be checked</td>
+          <td class="col-large">All staff members</td>
+          <td class="col-small">All staff members</td>
+          <td class="col-fcc">Licensee, certified assistants, all household members age 15+, and any person regularly on the premises</td>
+          <td class="col-asst">Applicant (self)</td>
+        </tr>
+
+        <tr class="section-header"><td colspan="5">Application fee</td></tr>
+
+        <tr>
+          <td>Fee</td>
+          <td class="col-large"><span class="fee fee-large">$275–$450</span><span class="fee-sub">Varies by licensed capacity</span></td>
+          <td class="col-small"><span class="fee fee-small">$175</span></td>
+          <td class="col-fcc"><span class="fee fee-fcc">$100</span></td>
+          <td class="col-asst"><span class="fee fee-asst">$75</span></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>Source: 606 CMR 7.00 — Standards for the Licensure or Approval of Family Child Care; Small Group and School Age and Large Group and School Age Child Care Programs. Massachusetts Department of Early Education and Care (EEC). Requirements are subject to change — verify current standards at <a href="https://www.mass.gov/orgs/department-of-early-education-and-care" style="color:#1F5CF7;">mass.gov/eec</a> before making compliance decisions.</p>
+  </footer>
+
+</div>
+</body>
+</html>
